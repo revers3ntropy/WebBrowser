@@ -8,11 +8,11 @@
 
 using namespace std;
 
-#include "httplib/httplib.h"
+#include "httplib.h"
 
 std::string fetch (const std::string& url) {
 
-    std::string domain = "";
+    std::string domain;
     std::string path = "";
     if (url.rfind("https://", 0) == 0) {
         domain = url.substr(8, url.length()-8);
